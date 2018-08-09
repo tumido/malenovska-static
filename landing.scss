@@ -14,7 +14,7 @@ body {
 
     @include background(
         linear-gradient(rgba(#000, .5), transparent),
-        linear-gradient(140deg, transparent 0%, transparent 32%, $orange 32%, $orange 100%),
+        linear-gradient(140deg, transparent 0%, transparent 32%, $orange 32%, $orange 95%, #000 95%, #000 100%),
         url(background.jpg));
     background-attachment: fixed;
     background-position: center center;
@@ -51,5 +51,34 @@ header {
 
     p {
         font-size: 2rem;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+
+    ul {
+        margin: 0 10 10 0;
+        list-style-type: none;
+        padding: 0;
+        text-align: right;
+    }
+
+    a {
+        text-decoration: none;
+        color: #ccc;
+
+        &:hover {
+            color: #eee;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    footer {
+        display: none;
     }
 }
