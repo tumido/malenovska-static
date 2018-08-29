@@ -3,7 +3,7 @@
 @import "compass/css3/transform";
 @import "compass/css3/images";
 
-$orange: rgba(#f19202, .2);
+$orange: rgba(#f19202, .3);
 
 body {
     padding: 0;
@@ -15,7 +15,8 @@ body {
     @include background(
         linear-gradient(rgba(#000, .5), transparent),
         linear-gradient(140deg, transparent 0%, transparent 32%, $orange 32%, $orange 95%, #000 95%, #000 100%),
-        url(background.jpg));
+        url(background.jpg)
+    );
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
